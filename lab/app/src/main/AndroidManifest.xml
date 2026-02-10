@@ -13,6 +13,11 @@
         android:theme="@style/Theme._527LabLearnAndroid"
         tools:targetApi="31">
         <activity
+            android:name=".MenuActivity"
+            android:exported="false"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/Theme._527LabLearnAndroid" />
+        <activity
             android:name=".ListActivity"
             android:exported="false"
             android:label="@string/title_activity_list"
@@ -34,7 +39,13 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme._527LabLearnAndroid"></activity>
+            android:theme="@style/Theme._527LabLearnAndroid">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
