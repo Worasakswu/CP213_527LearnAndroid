@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +14,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme._527LabLearnAndroid"
         tools:targetApi="31">
+        <activity
+            android:name=".PokedexActivity"
+            android:exported="false"
+            android:label="@string/title_activity_pokedex"
+            android:theme="@style/Theme._527LabLearnAndroid" />
+        <activity
+            android:name=".SharePreferencesActivity"
+            android:exported="false"
+            android:label="@string/title_activity_share_preferences"
+            android:theme="@style/Theme._527LabLearnAndroid" />
         <activity
             android:name=".MenuActivity"
             android:exported="false"
